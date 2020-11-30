@@ -1,0 +1,181 @@
+body {
+  text-align: center;
+  color: #000f08;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body * {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+h1 {
+  font-weight: 800;
+  font-size: 3.75em;
+  margin-bottom: 0.25em;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.75em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+.subtitulo,
+h4,
+h5 {
+  font-weight: 400;
+}
+
+#ubicacion h2 {
+  margin: 1em auto;
+}
+
+.titulo-foto {
+  padding-top: 12.25em;
+  text-align: left;
+}
+.img-header {
+  padding-top: 4.5625em;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.contenido {
+  width: 75%;
+  max-width: 1080px;
+  margin: 0 auto 4.5em;
+  text-align: left;
+}
+
+.texto p {
+  margin-top: 1em;
+}
+
+.sweet-brown h3,
+.sweet-brown h5 {
+  margin-bottom: 0.5em; /*Aquí se puede ver el ejemplo claro de como los em están condicionados por el elemento padre*/
+}
+
+#eventos h2 {
+  margin-bottom: 1em;
+}
+
+#eventos h3 {
+  margin: 1em auto;
+}
+
+.oscuro {
+  background: #000f08;
+  color: #ffffff;
+}
+
+.oscuro a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sweet-brown {
+  text-align: left;
+  background: #a4452c;
+  color: #ffffff;
+  padding: 3.125rem;
+  white-space: nowrap;
+}
+
+.hero-section {
+  text-align: right;
+  background-image: url("../img/bg-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-shadow: 0.125em 0.1875em 0.125em #707070;
+  padding: 6.25rem 3.125rem;
+}
+
+section,
+footer {
+  margin-top: 4.6875rem;
+}
+
+footer {
+  padding: 3.125rem;
+}
+
+.centrado {
+  width: 75%;
+  margin: 0 auto;
+}
+/*==============================================*/
+/* Aquí el selector ".charla-speaker", está incluido en el pdf (página 67 de resumen de código), mientras que en mi configuración no. Si es que efectivamente seguí bien las instrucciones de los videos e instrucciones de los pdf, habría una diferencia. Lo voy a incluir y revisar que pasa
+
+Al incluir el selector ".charla-speaker" con la propiedad "display: inline-block;" todo el bloque de texto que está bajo el selector ".charla-texto" pasa abajo de la imagen, no respetando el formateo con la propiedad "white-space: normal;" que se le dio al selector ".charla-texto", por lo tanto, se realiza rollback al selector ".charla-speaker" eliminado la propiedad "display: inline-block;" */
+.charla-texto,
+.evento {
+  display: inline-block;
+}
+/*==============================================*/
+.charla-speaker {
+  width: 25%;
+  vertical-align: middle;
+}
+
+.charla-texto {
+  width: 72.5%;
+  vertical-align: middle;
+  margin-left: 2.5%;
+  white-space: normal;
+}
+
+.evento {
+  width: 30%;
+}
+
+.enlace {
+  text-decoration: none;
+}
+
+.img-evento {
+  width: 75%;
+}
+
+nav {
+  text-align: left;
+  padding: 1.25rem 4rem;
+  position: fixed;
+  width: 100vw;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1em;
+  vertical-align: middle;
+}
+
+.icono {
+  width: 2rem;
+}
+
+.icono svg {
+  fill: #ffffff;
+}
+
+footer i {
+  margin: 0 0.25em 0.5em 0.25em;
+}
